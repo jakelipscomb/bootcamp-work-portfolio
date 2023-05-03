@@ -1,0 +1,19 @@
+header {
+    font-size: 20px;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: aqua;
+    color: black;
+
+}
+
+.front-picture {
+    background-image: url(../images/stainedglass.png);
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
