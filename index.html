@@ -13,17 +13,21 @@
     <header>
         <h1>Jake Lipscomb</h1>
         <nav>
-            <ul>
-                <li><a href="About Me">About Me</a></li>
-                <li><a href="Work">Work</a></li>
-                <li><a href="Contact Me">Contact Me</a></li>
-                <li><a href="Resume">Resume</a></li>
-            </ul>
+            <li><a href="About Me">About Me</a></li>
+            <li><a href="Work">Work</a></li>
+            <li><a href="Contact Me">Contact Me</a></li>
+            <li><a href="Resume">Resume</a></li>
         </nav>
     </header>
-    <figure class="front-picture" alt="Image of a stained glass artwork with different bright colors on the floor">Cool Subtitle Here</figure>
-    <main>
-        <section>
+
+    <section class="front-picture" alt="Image of a stained glass artwork with different bright colors on the floor">
+        <div>
+            <h2>Cool Subtitle Here!</h2>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="about-me">
             <article>
             <h2>About Me</h2>
                 <p>My name is Jake Lipscomb and I am currently a student in the EdX Coding Boot Camp at the University of Texas at Austin. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, necessitatibus doloremque. 
@@ -31,17 +35,31 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum voluptatibus eos voluptatem dolor quam recusandae laboriosam alias est ipsa, saepe possimus, quis reiciendis dicta quibusdam eius deleniti veniam. Eum.</p>
             </article>
         </section>
-        <section>
+        <section class="work-pictures">
             <h2>Work</h2>
-                <section>
-                    <img class=".stack" src="assets/images/coding-background.png" alt="" >
-                    <img class=".quad" src="assets/images/content-example.png" alt="" >
-                    <img class=".quad" src="assets/images/content-example.png" alt="" >
-                    <img class=".quad" src="assets/images/content-example.png" alt="" >
-                    <img class=".quad" src="assets/images/content-example.png" alt="" >
-                </section>
-            </section>
-        <section>
+                <div class="stack"> 
+                    <!-- Look into a caption element instead of H3 -->
+                    <h3>Project 1</h3>
+                    <img src="assets/images/coding-background.png" alt="" >    
+                </div>
+                <div class="quad">
+                    <caption>Project 1</caption>   
+                    <img src="assets/images/content-example.png" alt="" >
+                </div>
+                <div class="quad">
+                    <caption>Project 2</caption>   
+                    <img src="assets/images/content-example.png" alt="" >
+                </div>
+                <div class="quad">
+                    <caption>Project 3</caption>   
+                    <img src="assets/images/content-example.png" alt="" >
+                </div>
+                <div class="quad">
+                    <caption>Project 4</caption>   
+                    <img src="assets/images/content-example.png" alt="" >
+                </div>
+        </section>
+        <section class="contact-information">
             <h2>Contact Me</h2>
             <nav>
                 <ul>
@@ -55,8 +73,4 @@
         </section>
     </main>
 </body>
-
-<footer>
-    <article class="contacts" src=""></article>
-</footer>
 </html>
