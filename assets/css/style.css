@@ -6,27 +6,64 @@
     list-style-type: none;
 }
 
+:root {
+    --main-color: rgb(206, 179, 58);
+    --background-color: rgba(186, 189, 157, 0.671);
+    --border-color: black;
+}
+
 body {
     background-color: antiquewhite;
+    
 }
 
 header {
+    display: block;
+    position: sticky;
+    z-index: 1000;
     padding: 20px;
     font-size: 20px;
-    background-color: aqua;
+    background-color: var(--background-color);
     color: black;
+    top: 0;
+    border: 10px black solid;
+    background-image: url(../images/equalizer-background.png);
+    background-size: cover;
+    background-position:center;
+    isolation: isolate;
+    position: relative;
+}
+
+header::after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    background: var(--background-color);
+    opacity: 70%;
+    inset: 0;
 }
 
 header h1 {
     display: inline;
+    position: relative;
     font-size: 40px;
-    background-color: aquamarine;
+    width: 300px;
+    text-align: right;
+    right: 20px;
+    border-left: 20px var(--main-color) solid;
+    background-color: var(--main-color);
+
 }
 
 header nav {
+    display: inline;
+    position: relative;
     padding: 12px;
-    margin-right: 45px;
     float: right;
+    left: 40px;
+    color: var(--border-color);
+    border-right: 70px var(--main-color) solid;
+    background-color: var(--main-color);
 }
 
 header nav li {
@@ -35,65 +72,82 @@ font-weight: 700;
 margin-left: 20px;
 } 
 
-.front-picture {
+nav a:hover {
+    color: #fff;
+}
+
+.hero {
     display: flex;
     background-image: url(../images/stainedglass.png);
-    height: 700px;
+    height: 600px;
     width: 100%;
     background-size: cover;
     background-position: center;
+    border: 10px black solid;
     margin: 0;
-    color: white;
-    background-color: aqua;
 }
 
-.front-picture h2 {
-    
-    text-align: right;
-    
-
+.hero h2 {
+    display: flex;
+    justify-content: flex-end;    
+    background: var(--main-color);
+    color: var(--border-color);
+    border: 5px var(--border-color) solid;
 }
 
 .container {
     padding: 10px;
-
-}
-
-main section {
-    margin-top: 20px;
-}
-
-main section h2 {
-    font-size: 30px;
-    padding: 10px;
-    display: inline-block;
-}
-
-main section article {
-    padding: 5px;
-    margin: 10px;
-}
-
-img {
-    display: flex;
+    border: 10px black solid;
+    background-image: url(../images/equalizer-background.png);
+    background-size: cover;
+    background-position: center;
+    isolation: isolate;
     position: relative;
-    background-color: black;
-    margin: 20px;
-    padding: 5px;
-    border: 20px;
+
+}
+
+.container::after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    background: var(--background-color);
+    opacity: 70%;
+    inset: 0;
+
+}
+
+.main h2 {
+    flex: 1 0 0;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
     
 }
 
-.stack {
-    width: 600px;
-    height: 400px;
+.main h3 {
+    display: flexbox;
+    position: relative;
+    top: 50px;
+    padding: 20px;
+    text-decoration: line-through;
+    background: var(--border-color);
+    color: #fff;
 }
 
-.quad {
-    width: 400px;
-    height: 400px;
-
+.container img {
+    display: flex;
+    position: relative;
+    background-color: var(--background-color);
+    margin: 0 auto;
+    padding: 5px;
+    border: 20px;
+    box-shadow: 10px 10px 5px var(--border-color);
 }
+
+
 
 p {
     display: flex;
@@ -124,4 +178,20 @@ margin-left: 20px;
 
 } 
 
-.work-pictures > div
+
+/* work on this later */
+@media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
