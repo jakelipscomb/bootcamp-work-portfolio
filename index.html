@@ -10,26 +10,26 @@
 </head>
 
 <body>
-    <header>
+    <header class = "header">
         <h1>Jake Lipscomb</h1>
         <nav>
             <ul>
-                <li><a href="About Me">About Me</a></li>
-                <li><a href="Work">Work</a></li>
-                <li><a href="Contact Me">Contact Me</a></li>
-                <li><a href="Resume">Resume</a></li>
+                <li><a id="About Me"><button>About Me</button></a></li>
+                <li><a id="Work"><button>Work</button></a></li>
+                <li><a id="Contact Me"><button>Contact Me</button></a></li>
+                <li><a id="Resume"><button>Resume</button></a></li>
             </ul>    
         </nav>
     </header>
 
     <section class="hero" alt="Image of a stained glass artwork with different bright colors on the floor">
         <div>
-            <h2>This a beautiful building is titled Austin by Ellsworth Kelly located in Austin, TX.</h2>
+            <h2>Fun Fact: This a beautiful building is titled "<i>Austin</i>" by Ellsworth Kelly located in Austin, TX.</h2>
         </div>
     </section>
 
     <main class="container">
-        <section class="about-me">
+        <section id="about-me">
             <article>
             <h2>About Me</h2>
                 <p>My name is Jake Lipscomb and I am currently a student in the EdX Coding Boot Camp at the University of Texas at Austin. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, necessitatibus doloremque. 
@@ -38,42 +38,42 @@
             </article>
         </section>
         <section class="work-pictures">
-            <div class="card">
             <h2>Work</h2>
-                <section class="ongoing-project"> 
+                <section id="ongoing-project"> 
                     <h3>Project 1</h3>
                     <img src="assets/images/coding-background.png" alt="Horiseon" style >    
                 </section>
-                <section class="first-project">
-                    <caption>Project 1</caption>   
-                    <img src="assets/images/content-example.png" alt="Horiseon Module 1" >
+            <div class=".card">
+                <section id="first-project">
+                    <h2 class = "card-header">Project 1</h2>   
+                    <img src="assets/images/horiseonhomepage.png" alt="Horiseon Module 1" >
                 </section>
-                <section class="second-project">
-                    <caption>Project 2</caption>   
-                    <img src="assets/images/content-example.png" alt="" >
+                <section id="second-project">
+                    <h2 class = "card-header">Project 2</h2>      
+                    <img src="assets/images/equalizer-background.png" alt="placeholder" >
                 </section>
-                <section class="third-project">
-                    <caption>Project 3</caption>   
-                    <img src="assets/images/content-example.png" alt="" >
+                <section id="third-project">
+                    <h2 class = "card-header">Project 3</h2>      
+                    <img src="assets/images/equalizer-background.png" alt="placeholder" >
                 </section>
                 <section class="fourth-project">
-                    <caption>Project 4</caption>   
-                    <img src="assets/images/content-example.png" alt="" >
+                    <h2 class = "card-header">Project 4</h2>      
+                    <img src="assets/images/equalizer-background.png" alt="placeholder" >
                 </section>
             </div>
         </section>
-        <section class="contact-information">
+        <aside id="contact-information">
             <h2>Contact Me</h2>
             <nav>
                 <ul>
-                    <li><a href="About Me">956.407.7952</a></li>
-                    <li><a href="Work">jlipsombtx95@gmail.com</a></li>
-                    <li><a href="Contact Me">Github</a></li>
-                    <li><a href="Resume">Twitter</a></li>
-                    <li><a href="Resume">Spotify</a></li>
+                    <li><a id="About Me">956.407.7952</a></li>
+                    <li><a id="Work">jlipsombtx95@gmail.com</a></li>
+                    <li><a id="Contact Me">Github</a></li>
+                    <li><a id="Resume">Twitter</a></li>
+                    <li><a id="Resume">Spotify</a></li>
                 </ul>
             </nav>
-        </section>
+        </aside>
     </main>
 </body>
 </html>
