@@ -15,119 +15,129 @@
 
 body {
     padding: 10px;
-    background-color: var(--main-color);
+    box-shadow: 0 0 2rem var(--border-color), 0 0 0.8rem var(--border-color), 0 0 2.8rem var(--border-color), inset 0 0 1.3rem var(--border-color); 
 }
 
 p {
-    font-size: 18px;
-    margin: 10px;    
+    font-size: 20px;
+    margin: 0px;
+    padding: 10px;
+    background-color: var(--background-color);
 }
 
 .header {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     position: sticky;
     z-index: 1000;
-    padding: 20px;
-    font-size: 20px;
+    top: 0;
+    padding: 0 10px 0 20px;
+    font-size: 30px;
     background-color: var(--background-color);
     color: var(--border-color);
-    top: 0;
     border: 10px var(--border-color) solid;
     background-image: url(../images/equalizer-background.png);
     background-size: cover;
     background-position:center;
-    isolation: isolate;
 }
 
-.header::after {
-    content: " ";
-    position: absolute;
-    z-index: -1;
-    background: var(--background-color);
-    opacity: 70%;
-    inset: 0;
+#profile-picture {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 25%;
+    border: 10px var(--border-color) solid;
+    background: url(../images/jake-profile.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .header h1 {
-    display: inline;
-    position: relative;
-    font-size: 40px;
-    width: 300px;
-    text-align: right;
-    right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 90px;
+    width: 500px;
     border: 10px black solid;
-    border-left: 0px var(--main-color) solid;
     background-color: var(--main-color);
-
 }
 
 .header nav {
-    display: inline;
+    display: inline-block;
     position: relative;
-    padding: 12px;
-    float: right;
-    left: 25px;
-    bottom: 15px;
-    border: 10px black solid;
-    color: var(--border-color);
-    background-color: var(--main-color);
+    top: 50px;
+    left: 20px;
 }
 
-.header nav li {
-    display: inline-block;
+.header nav ul {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: 700;
-    margin-left: 20px;
+    border: 9px var(--border-color) solid;
+}
 
+.header nav ul li {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 200px;
+    min-width: 60px;
+    padding: 30px;
+    background-color: var(--main-color);
+    border: 1px var(--border-color) solid;
 }
 
 .header button {
     display: inline-block;
-    width: 170px;
+    width: 250px;
+    font-weight: 700;
     color: var(--border-color);
     background-color: var(--background-color);
 }
 
 nav a button:hover {
-    color:white;
+    color:var(--hover-color);
 }
 
 nav a:hover {
-    color:white;
+    color:var(--hover-color);
 }
 
 nav a:active {
-    font-size: 90%;
-    box-shadow: 0 0 10px var(--border-color) inset;
-}
-nav a:focus {
-    outline: none;
-    border-color: blue
+    font-size: 94%;
+    box-shadow: 0 0 20px var(--border-color) inset;
 }
 
 .hero {
     display: flex;
+    justify-content: end;
+    align-items: end;
     background-image: url(../images/stainedglass.png);
-    height: 600px;
+    height: 1000px;
     width: 100%;
     background-size: cover;
     background-position: center;
     border-style: solid;
-    border-width: 0px 10px;
-    margin: 0;
+    border-width: 0 10px;
 }
 
 .hero h2 {
-    display: inline-block;
-    position: relative;
-    margin-left: 100%;
-    margin-top: 50%;
-
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    font-size: 25px;
     background: var(--main-color);
     color: var(--border-color);
     border: 5px var(--border-color) solid;
 }
 
 .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
     padding: 10px;
     border: 10px black solid;
     background-image: url(../images/equalizer-background.png);
@@ -135,6 +145,7 @@ nav a:focus {
     background-position: center;
     isolation: isolate;
     position: relative;
+    gap: 10px;
 }
 
 .container::after {
@@ -144,111 +155,166 @@ nav a:focus {
     background: var(--background-color);
     opacity: 70%;
     inset: 0;
+    width: 100%;
 }
 
-.container img {
+.card-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    background-color: var(--background-color);
-    margin: 0;
-    width: 400px;
-    padding: 5px;
-    border: 20px;
-    box-shadow: 10px 10px 5px var(--border-color);
+    width: 100%;
 }
 
 .card {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 0 500px;
+    width: 500px;
+    padding: 5px;
+    padding-top: 300px;
+    margin: 15px;
+    border: 30px;
+    border-radius: 25%;
+    background-size: cover;
+    border: 5px var(--border-color) solid;
+    box-shadow: 15px 15px 10px rgb(51, 51, 51);
+}
+
+#ongoing-project {
+    background-image: url(../images/coding-background.png);
+    flex: 1 0 96%;
+    border-radius: 0;
     position: relative;
-    width: 800px;
-    height: 100px;
-    margin: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+#ongoing-project:hover {
+    opacity: 75%;
+}
+
+#first-project {
+    background-image: url(../images/horiseonhomepage.png);
+}
+
+#first-project:hover {
+    opacity: 75%;
+}
+
+#second-project {
+    background-image: url(../images/portfolio-screenshot.png)
+    
+}
+
+#second-project:hover {
+    opacity: 75%;
+}
+
+#third-project {
+    background-image: url(../images/equalizer-background.png)
+    
+}
+
+#third-project:hover {
+    opacity: 75%;
+}
+
+#fourth-project {
+    background-image: url(../images/equalizer-background.png)
+    
+}
+
+#fourth-project:hover {
+    opacity: 75%;
 }
 
 .card-header {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-block;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    align-content: center;
+    text-align: center;
     color: var(--border-color);
-    background-color: var(--background-color);
+    background-color: var(--main-color);
     font-size: 20px;
     padding: 20px;
     border: 5px var(--border-color) solid;
 }
 
+h3:hover {
+    color:var(--hover-color);
+}
+
+h3 a:hover {
+    color: var(--hover-color);
+}
+
 #about-me {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+    display: inline;
     text-align: center;
     font-size: 16px;
     padding: 10px;
     font-size: 30px;
     background-color: var(--background-color);
+    border: 10px var(--border-color) solid;
+}
+
+#about-me h2 {
+    padding: 20px;
+    background-color: var(--main-color);
+    border: 5px var(--border-color) solid;
+}
+
+#work-header {
+    display: inline;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    background-color: var(--background-color);
+    border: 10px var(--border-color) solid;
+}
+
+#work-header h2 {
+    margin: 0;
+    padding: 20px;
+    background-color: var(--main-color);
     border: 5px var(--border-color) solid;
 }
 
 #contact-information {
     padding: 40px;
+    margin: 20px;
     font-size: 20px;
+    width: 100%;
     display: flex;
     position: relative;
     justify-content: space-evenly;
     background-color: var(--background-color);
-    border:  black solid;
+    border: 10px black solid;
 }
 
-#contact-information h2 {
+#contact-information h4 {
+    align-self: center;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 50px;
+    padding: 20px;
     border: 5px var(--border-color) solid;
     background-color: var(--main-color);
 }
 
 #contact-information nav ul {
-display: flex;
-position: relative;
-font-size: 25px;
-top: 10px;
-text-align: center;
-padding: 5px;
-background-color: var(--main-color);
-border: 5px var(--border-color) solid;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px;
+    background-color: var(--main-color);
+    border: 5px var(--border-color) solid;
 } 
 
 #contact-information nav ul li {
     display: inline-block;
     text-align: center;
     margin-left: 20px;
+    padding: 20px;
 }
-
-/* work on this later 
-
-@media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow 
-    .container {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    /* select the last child to grow to full width if it has space to grow 
-    .card:last-child {
-      flex-grow: 1;
-    }
-  }
-  
-  /* media query for larger screens 
-  @media screen and (min-width: 992px) {
-    .header {
-      width: 100%;
-    } */
-  
-    /* .card {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
-    }
-  }  */

@@ -11,15 +11,16 @@
 
 <body>
     <header class = "header">
-        <h1>Jake Lipscomb</h1>
+    <h1>Jake Lipscomb</h1>
         <nav>
             <ul>
-                <li><a id="About Me"><button>About Me</button></a></li>
-                <li><a id="Work"><button>Work</button></a></li>
-                <li><a id="Contact Me"><button>Contact Me</button></a></li>
-                <li><a id="Resume"><button>Resume</button></a></li>
-            </ul>    
-        </nav>
+                <li><a href="#about-me"><button>About Me</button></a></li>
+                <li><a href="#work-header"><button>Work</button></a></li>
+                <li><a href="#contact-information"><button>Contact Me</button></a></li>
+                <li><a href="Resume"><button>Resume</button></a></li>
+            </ul>
+        </nav>    
+        <figure id="profile-picture" alt="picture of myself"></figure>    
     </header>
 
     <section class="hero" alt="Image of a stained glass artwork with different bright colors on the floor">
@@ -32,48 +33,44 @@
         <section id="about-me">
             <article>
             <h2>About Me</h2>
-                <p>My name is Jake Lipscomb and I am currently a student in the EdX Coding Boot Camp at the University of Texas at Austin. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, necessitatibus doloremque. 
-                    Ullam quia voluptas mollitia dignissimos alias aliquam vel sunt asperiores exercitationem, modi id ipsum nostrum, repellendus aut similique nesciunt?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum voluptatibus eos voluptatem dolor quam recusandae laboriosam alias est ipsa, saepe possimus, quis reiciendis dicta quibusdam eius deleniti veniam. Eum.</p>
+                <p>Hey there! Thanks for checking out my portfolio! My name is Jake and I'm currently a student in the EdX Coding Boot Camp at the University of Texas at Austin. It is my current goal to pass this boot camp and pursue a career that would help me foster a more diverse and creatively-driven mindset. My interests at this time are CSS and front-end development.</p>
+                <p>I work as a Security Assistant Manager for the Blanton Museum of Art at the University of Texas At Austin. I've been working at the museum for a total of almost 8 years and many of my developed skills, including interpersonal communication, de-escalation, and customer service are a culmination of my professional identity. When I'm not working, I enjoy cooking and PC gaming.</p>
+                <p>Please take a look at my projects below when they're available as they lend a better understanding of my programming background and the progress I'm making within this new work environment.</p>
             </article>
         </section>
-        <section class="work-pictures">
-            <h2>Work</h2>
-                <section id="ongoing-project"> 
-                    <h3>Project 1</h3>
-                    <img src="assets/images/coding-background.png" alt="Horiseon" style >    
-                </section>
-            <div class=".card">
-                <section id="first-project">
-                    <h2 class = "card-header">Project 1</h2>   
-                    <img src="assets/images/horiseonhomepage.png" alt="Horiseon Module 1" >
-                </section>
-                <section id="second-project">
-                    <h2 class = "card-header">Project 2</h2>      
-                    <img src="assets/images/equalizer-background.png" alt="placeholder" >
-                </section>
-                <section id="third-project">
-                    <h2 class = "card-header">Project 3</h2>      
-                    <img src="assets/images/equalizer-background.png" alt="placeholder" >
-                </section>
-                <section class="fourth-project">
-                    <h2 class = "card-header">Project 4</h2>      
-                    <img src="assets/images/equalizer-background.png" alt="placeholder" >
-                </section>
-            </div>
+            <article id="work-header">
+                <h2>Work</h2>
+            </article>    
+        <section class="card-container">
+                <figure id="ongoing-project" class="card" alt="Horiseon"> 
+                    <h3 class = "card-header">Ongoing Project</h3>  
+                </figure>
+                <figure id="first-project" class="card" alt="Horiseon Module 1">
+                    <h3 class = "card-header"><a href="https://jakelipscomb.github.io/module-1-challenge/">Project 1 - Horiseon Mock Up Challenge</a></h3>   
+                </figure>
+                <figure id="second-project" class="card" alt="placeholder" >
+                    <h3 class = "card-header"><a href="https://jakelipscomb.github.io/bootcamp-work-portfolio/">Project 2</a></h3>      
+                </figure>
+                <figure id="third-project" class="card" alt="placeholder" >
+                    <h3 class = "card-header">Project 3</h3>      
+                </figure>
+                <figure id="fourth-project" class="card" alt="placeholder">
+                    <h3 class = "card-header">Project 4</h3>
+                </figure>
         </section>
-        <aside id="contact-information">
-            <h2>Contact Me</h2>
+        <section id="contact-information">
+            <h4>Contact Me</h4>
             <nav>
                 <ul>
                     <li><a id="About Me">956.407.7952</a></li>
-                    <li><a id="Work">jlipsombtx95@gmail.com</a></li>
-                    <li><a id="Contact Me">Github</a></li>
-                    <li><a id="Resume">Twitter</a></li>
-                    <li><a id="Resume">Spotify</a></li>
+                    <li><a id="Work" href = >jlipsombtx95@gmail.com</a></li>
+                    <li><a id="github" href = "https://github.com/jakelipscomb">Github</a></li>
+                    <li><a id="twitter" href = "https://twitter.com/FallenZero_JL">Twitter</a></li>
+                    <li><a id="spotify" href = "https://open.spotify.com/user/1270905935">Spotify</a></li>
                 </ul>
             </nav>
-        </aside>
+        </section>
     </main>
+
 </body>
 </html>
