@@ -8,7 +8,7 @@ This project contains my work portfolio which will house content that I create d
 
 https://jakelipscomb.github.io/bootcamp-work-portfolio/
 
-![Horiseon Mock-Up Home Page](assets/images/portfolio-screenshot.png)
+![Jake's Bootcamp Work Portfolio](assets/images/portfolio-screenshot.png)
 
 ## **Technologies**
 Project is created with:
