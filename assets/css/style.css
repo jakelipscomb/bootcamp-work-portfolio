@@ -181,7 +181,7 @@ nav a:active {
 }
 
 #ongoing-project {
-    background-image: url(../images/coding-background.png);
+    background-image: url(../images/WoDN-fullpage.png);
     flex: 1 0 100%;
     width: 1000px;
     height: 800px;
@@ -213,7 +213,7 @@ nav a:active {
 }
 
 #second-project {
-    background-image: url(../images/portfolio-screenshot.png)
+    background-image: url(../images/password-generator-screenshot.png)
     
 }
 
@@ -222,7 +222,7 @@ nav a:active {
 }
 
 #third-project {
-    background-image: url(../images/equalizer-background.png)
+    background-image: url(../images/work-day-scheduler.png)
     
 }
 
@@ -231,7 +231,7 @@ nav a:active {
 }
 
 #fourth-project {
-    background-image: url(../images/equalizer-background.png)
+    background-image: url(../images/weatherapp2.png)
     
 }
 
