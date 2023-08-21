@@ -181,7 +181,7 @@ nav a:active {
 }
 
 #ongoing-project {
-    background-image: url(../images/WoDN-fullpage.png);
+    background-image: url(../images/mock-restaurant-build.gif);
     flex: 1 0 100%;
     width: 1000px;
     height: 800px;
@@ -205,7 +205,7 @@ nav a:active {
 }
 
 #first-project {
-    background-image: url(../images/horiseonhomepage.png);
+    background-image: url(../images/WoDN-fullpage.png);
 }
 
 #first-project:hover {
